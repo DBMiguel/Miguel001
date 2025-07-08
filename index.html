@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Login con varios usuarios</title>
+  <title>Login con usuarios y contraseñas hash</title>
 </head>
 <body>
 
@@ -19,12 +19,18 @@
 
   <p id="msg" style="color:red;"></p>
 
+ 
   <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
   <script>
-    // Listado de usuarios y sus contraseñas hasheadas (SHA-256)
+    
     const usuarios = {
-      "miguel": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",   // 
+      // username:password
+      "4c9e8ed67c419b0b2396d7cd8e2a6e7f8c3ba90d270d3c58de843b1cf7e169f7": // 
+        "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f" // 
     };
+
+   
+    const urlCodificada = "aHR0cHM6Ly9zaXRlcy5nb29nbGUuY29tL3ZpZXcvaW50cmFuZXRrYWJ5L2luaWNpby9hdXRodXNlcj0w";
 
     const form = document.getElementById("loginForm");
     const msg = document.getElementById("msg");
@@ -34,11 +40,16 @@
 
       const user = document.getElementById("user").value.trim();
       const pass = document.getElementById("password").value;
-      const passIngresadoHash = sha256(pass);
 
-      if (usuarios[user] && usuarios[user] === passIngresadoHash) {
-        // Login exitoso, redirigir o mostrar mensaje
-        window.location.href = "https://sites.google.com/view/intranetkaby/inicio?authuser=0";
+      
+      const userHash = sha256(user);
+      const passHash = sha256(pass);
+
+     
+      if (usuarios[userHash] && usuarios[userHash] === passHash) {
+       
+        const url = atob(urlCodificada); 
+        window.location.href = url;
       } else {
         msg.textContent = "Usuario o contraseña incorrectos";
       }

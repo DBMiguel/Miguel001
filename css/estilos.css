@@ -1,4 +1,4 @@
-/* Paleta de colores */
+
 :root {
   --blanco: #ffffff;
   --azul: #1a73e8;
@@ -6,7 +6,7 @@
   --negro: #000000;
 }
 
-/* Reset básico */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   line-height: 1.6;
 }
 
-/* Contenedor general */
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -28,7 +28,7 @@ body {
   padding: 20px 0;
 }
 
-/* Navbar */
+
 .navbar {
   background-color: var(--azul);
   padding: 15px 0;
@@ -85,7 +85,7 @@ body {
   background-color: #0f52c9;
 }
 
-/* Header hero */
+
 .hero {
   background-color: var(--azul-claro);
   height: 70vh;
@@ -107,7 +107,7 @@ body {
   margin-bottom: 25px;
 }
 
-/* Main */
+
 h2 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -143,7 +143,8 @@ p {
   line-height: 1.4;
 }
 
-/* Footer */
+
+
 .footer {
   background-color: var(--negro);
   color: var(--blanco);
@@ -153,7 +154,7 @@ p {
   margin-top: 50px;
 }
 
-/* Responsive - menú simple para móvil */
+/* Responsive - menú simple para móvil para no equivocarme */
 @media (max-width: 768px) {
   .navbar .container-fluid {
     flex-direction: column;
@@ -179,3 +180,4 @@ p {
     font-size: 1rem;
   }
 }
+

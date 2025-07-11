@@ -1,21 +1,16 @@
-/restaurante-web
+/Prestamos-web
 │
 ├── index.html
-├── about.html
-├── menu.html
-├── gallery.html
-├── contact.html
+├── Sobre Nosotros.html
+├── Servicios.html
+├── Contacto.html
+├── Pregutnas.html
 │
 ├── css/
-│   └── styles.css
+│   └── EStilos.css
 │
 ├── img/
-│   └── logo.png
-│   └── banner.jpg
-│   └── platillo1.jpg
-│   └── platillo2.jpg
-│
-├── js/
-│   └── scripts.js (vacío por ahora)
-│
-└── .gitignore
+│   └── Imagen01.png
+│   └── Imagen02.jpg
+│   └── Imagen03.jpg
+│   └── *.jpg

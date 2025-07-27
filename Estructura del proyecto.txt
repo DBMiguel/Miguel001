@@ -16,6 +16,7 @@
 │   └── facebook.jpg
 │
 ├── /scss
+├────── /Partials
 │   ├── _variables.scss
 │   ├── _mixins.scss
 │   ├── _base.scss

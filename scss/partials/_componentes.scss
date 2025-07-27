@@ -14,3 +14,9 @@ header {
     margin-top: 1rem;
   }
 }
+
+
+.sombra {
+  @extend %sombra-generica;
+}
+

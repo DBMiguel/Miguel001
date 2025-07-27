@@ -1,0 +1,15 @@
+@use 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font-family-base;
+  font-size: variables.$font-size-base;
+  background-color: variables.$color-blanco;
+  color: variables.$color-negro;
+  line-height: 1.6;
+}

@@ -1,0 +1,15 @@
+.impulso {
+  opacity: 0;
+  animation: Animacion1 2s forwards;
+}
+
+@keyframes Animacion1 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

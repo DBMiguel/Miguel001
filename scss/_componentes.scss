@@ -1,0 +1,16 @@
+@use 'variables';
+
+header {
+  background-color: variables.$color-azul;
+  color: variables.$color-blanco;
+  text-align: center;
+  padding: 4rem 1rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p.lead {
+    margin-top: 1rem;
+  }
+}

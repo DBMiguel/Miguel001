@@ -1,0 +1,135 @@
+:root {
+    --blanco: #ffffff;
+    --azul: #1a73e8;
+    --azul-claro: #d2e3fc;
+    --negro: #000000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--blanco);
+    color: var(--negro);
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background-color: var(--azul) !important;
+  
+    .navbar-brand {
+      color: var(--blanco) !important;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  
+    .nav-link {
+      color: var(--blanco) !important;
+      font-weight: 600;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: var(--azul-claro) !important;
+      }
+    }
+  }
+  
+  .hero {
+    background-color: var(--azul-claro);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: var(--negro);
+  
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+    }
+  }
+  
+  .card-container {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto; // centra horizontalmente
+  }
+  
+  .card {
+    width: 200px;
+    height: 300px;
+    perspective: 2000px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--azul-claro);
+    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.2);
+    transition: box-shadow 0.9s ease;
+  
+    .card-inner {
+      width: 200%;
+      height: 200%;
+      transform-style: preserve-3d;
+      transition: transform 0.9s;
+    }
+  
+    &:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+  
+    .card-front,
+    .card-back {
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      backface-visibility: hidden;
+    }
+  
+    .card-back {
+      transform: rotateY(180deg);
+    }
+  
+    &:hover {
+      box-shadow: 0 4px 12px rgba(26, 115, 232, 0.4);
+    }
+  }
+  
+  .impulso {
+    opacity: 0;
+    animation: Animacion1 1s infinite;
+  
+    @keyframes Animacion1 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .hero {
+      h1 {
+        font-size: 3rem;
+      }
+  
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+  

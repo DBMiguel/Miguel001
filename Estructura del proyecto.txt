@@ -4,13 +4,23 @@
 ├── Sobre Nosotros.html
 ├── Servicios.html
 ├── Contacto.html
-├── Pregutnas.html
+├── Preguntas.html
 │
 ├── css/
-│   └── EStilos.css
+│   └── EStilos.css (compilado por parte de scss)
 │
 ├── img/
-│   └── Imagen01.png
-│   └── Imagen02.jpg
-│   └── Imagen03.jpg
-│   └── *.jpg
+│   └── Enfrente.png
+│   └── Atras.jpg
+│   └── twitter.jpg
+│   └── facebook.jpg
+│
+├── /scss
+│   ├── _variables.scss
+│   ├── _mixins.scss
+│   ├── _base.scss
+│   ├── _navbar.scss
+│   ├── _animations.scss
+│   ├── _layout.scss
+│   ├── _componentes.scss
+│   └── main.scss

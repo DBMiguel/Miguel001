@@ -7,7 +7,7 @@
 ├── Preguntas.html
 │
 ├── css/
-│   └── EStilos.css (compilado por parte de scss)
+│   └── Estilos.css (compilado por parte de scss)
 ├── img/
 │   └── Varias Imagenes
 │

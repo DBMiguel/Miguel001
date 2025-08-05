@@ -3,24 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Préstamos Rápidos</title>
+  <meta name="description" content="Préstamos rápidos y sin aval" />
+  <meta name="keywords" content="préstamos, préstamo rápido, sin aval, créditos, financiamiento" />
+  <meta name="empresa001" content="empresa001" />
+  <link rel="canonical" href="/index.html" />
+
+
+  <!-- 1Favicon-->
+  <link rel="icon" href="/IMG/1Fovicon.png" type="image/png" />
+
+  <title>💲 Préstamos Rápidos y sin aval 💲</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/estilos.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav role="navigation" aria-label="Menú principal" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://dbmiguel.github.io/Miguel001/index.html">💰 Préstamos Rápidos</a>
+      <a class="navbar-brand" href="/index.html">💰 Préstamos Rápidos</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="https://dbmiguel.github.io/Miguel001/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="Paginas/Nosotros.html">Nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="Paginas/Servicios.html">Servicios</a></li>
           <li class="nav-item"><a class="nav-link" href="Paginas/Contacto.html">Contacto</a></li>
@@ -30,13 +39,16 @@
     </div>
   </nav>
 
-  <!-- HERO PRINCIPAL -->
+  
+
+
   <header class="impulso text-white text-center d-flex align-items-center justify-content-center" style="height: 90vh;" data-aos="fade-down">
+    <h1 class="visually-hidden">Préstamos Rápidos y Flexibles para Ti</h1>
     <div class="card-container">
       <div class="card">
         <div class="card-inner">
           <div class="card-front">
-            <img src="IMG/Enfrente.jpg" alt="Frente">
+            <img src="IMG/Tarjeta representando préstamos.jpg" alt="Frente" />
           </div>
           <div class="card-back d-flex align-items-center justify-content-center">
             <h2>¡Solicita tu préstamo hoy!</h2>
@@ -46,7 +58,8 @@
     </div>
   </header>
 
-  <!-- SECCIÓN DE BENEFICIOS -->
+  
+
   <main class="container my-5">
     <div class="row text-center">
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
@@ -80,20 +93,27 @@
   <footer class="bg-dark text-white text-center py-4">
     <p>Síguenos en nuestras redes sociales</p>
     <div class="mb-3">
-      <a href="#" class="mx-2"><img src="IMG/facebook.png" alt="Facebook" style="width:30px;height:30px;"></a>
-      <a href="#" class="mx-2"><img src="IMG/twitter.png" alt="Twitter" style="width:30px;height:30px;"></a>
+      <a href="https://www.facebook.com/" class="mx-2">
+        <img src="IMG/facebook.png" alt="Facebook" style="width:30px;height:30px;" />
+      </a>
+      <a href="https://x.com/" class="mx-2">
+        <img src="IMG/twitter.png" alt="Twitter" style="width:30px;height:30px;" />
+      </a>
+      <a href="https://www.instagram.com/" class="mx-2">
+        <img src="IMG/Instagram.jpg" alt="Instagram" style="width:30px;height:30px;" />
+      </a>
     </div>
     <p class="mb-0">&copy; 2025 Préstamos Rápidos | Todos los derechos reservados</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200,
-    once: true
-  });
-</script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
 
 </body>
 </html>

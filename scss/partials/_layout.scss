@@ -1,41 +1,77 @@
-@use 'mixins';
-
+@use 'mixins' as *;
+ 
+.header-center {
+  @include flex-center;            
+  height: 50vh;
+  width: 50%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;              
+  background-color: #f8f9fa;       
+}
+ 
 .card-container {
-  @include mixins.flex-center;
-  height: 100vh;
+  @include flex-center;
+  height: 50%;
+  width: 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+ 
+.card {
+  width: 50px;
+  height: 50px;
+  perspective: 50px;
 
-  .card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .card-inner {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-
-      .card-front, .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-
-      .card-back {
-        transform: rotateY(180deg);
-      }
-    }
-
-    &:hover .card-inner {
-      transform: rotateY(180deg);
-    }
+  @media (max-width: 576px) {
+    width: 90vw;      
+    height: auto;     
   }
+}
+
+.card-inner {
+  width: 50%;
+  height: 50%;
+
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front,
+.card-back {
+  @include flex-center;
+  flex-direction: column;   
+  width: 50%;
+  height: 50%;
+  backface-visibility: hidden;
+
+  img {
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.card-back {
+  transform: rotateY(180deg);
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
 }

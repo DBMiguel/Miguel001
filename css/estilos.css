@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
-
 .visually-hidden {
   position: absolute !important;
   width: 1px; 
@@ -19,8 +16,6 @@
   border: 0;
 }
 
-
->>>>>>> d207ef0 (Realizando cambios en la pagina index.html, correccion de imagenes de footer y se anexa primeras lineas de SEO Basico)
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
@@ -50,6 +45,8 @@ body {
 .impulso {
   opacity: 0;
   animation: Animacion1 2s forwards;
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes Animacion1 {
@@ -62,6 +59,7 @@ body {
     transform: translateY(0);
   }
 }
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -80,13 +78,15 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-.card-container .card .card-inner .card-front, .card-container .card .card-inner .card-back {
+.card-container .card .card-inner .card-front,
+.card-container .card .card-inner .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
-.card-container .card .card-inner .card-front img, .card-container .card .card-inner .card-back img {
+.card-container .card .card-inner .card-front img,
+.card-container .card .card-inner .card-back img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -110,5 +110,3 @@ header h1 {
 header p.lead {
   margin-top: 1rem;
 }
-
-/*# sourceMappingURL=estilos.css.map */

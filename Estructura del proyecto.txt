@@ -8,12 +8,8 @@
 │
 ├── css/
 │   └── EStilos.css (compilado por parte de scss)
-│
 ├── img/
-│   └── Enfrente.png
-│   └── Atras.jpg
-│   └── twitter.jpg
-│   └── facebook.jpg
+│   └── Varias Imagenes
 │
 ├── /scss
 ├────── /Partials
@@ -25,3 +21,4 @@
 │   ├── _layout.scss
 │   ├── _componentes.scss
 │   └── main.scss
+│   └── Style.scss

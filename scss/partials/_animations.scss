@@ -1,6 +1,7 @@
 .impulso {
   opacity: 0;
   animation: Animacion1 2s forwards;
+  animation-timing-function: ease-out;
 }
 
 @keyframes Animacion1 {

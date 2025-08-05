@@ -1,5 +1,5 @@
 @use 'mixins' as *;
- 
+
 .header-center {
   @include flex-center;            
   height: 50vh;
@@ -9,7 +9,7 @@
   text-align: center;              
   background-color: #f8f9fa;       
 }
- 
+
 .card-container {
   @include flex-center;
   height: 50%;
@@ -17,7 +17,7 @@
   padding: 1rem;
   box-sizing: border-box;
 }
- 
+
 .card {
   width: 50px;
   height: 50px;
@@ -54,8 +54,8 @@
   backface-visibility: hidden;
 
   img {
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 50%;
+    max-height: 50%;
     object-fit: contain;
     display: block;
     margin: 0 auto;
@@ -69,6 +69,21 @@
     font-size: 1.8rem;
     text-align: center;
     margin: 0;
+  }
+
+  .imagenes-pequenas {
+    display: flex;
+    justify-content: center;    
+    gap: 1rem;                  
+    margin-top: 1rem;          
+  }
+
+  .imagenes-pequenas img {  
+    width: 10px;                
+    height: auto;
+    border-radius: 4px;         
+    object-fit: contain;
+    transform: rotateY(180deg); 
   }
 }
 

@@ -70,13 +70,12 @@ footer a {
 }
 
 
-/* Contenedor padre que centra el video */
 .video-wrapper {
   display: flex;
-  justify-content: center; /* centra horizontal */
-  align-items: center;     /* centra vertical */
-  height: 100vh;           /* altura 100% viewport para centrar vertical */
-  padding: 1rem;           /* opcional, para que no pegue a los bordes */
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;          
+  padding: 2rem;           
 }
 
 .video-container {

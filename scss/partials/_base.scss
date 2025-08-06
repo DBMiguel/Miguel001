@@ -78,7 +78,6 @@ footer a {
 }
 
 .video-container {
-  align-items: center;
   position: relative;
   width: 100%;
   max-width: 480px; 
@@ -90,7 +89,7 @@ footer a {
 }
 
 .video-container iframe {
-  align-items: center;
+
   position: absolute;
   top: 0; left: 0;
   width: 100%;

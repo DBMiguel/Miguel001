@@ -37,19 +37,20 @@
     <form class="row g-3">
       <div class="col-md-6">
         <label for="nombre" class="form-label">Nombre completo</label>
-        <input type="text" class="form-control" id="nombre" required>
+        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingresa tu nombre completo" required>
+
       </div>
       <div class="col-md-6">
         <label for="correo" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="correo" required>
+        <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico" required>
       </div>
       <div class="col-md-6">
         <label for="Telefono" class="form-label">Teléfono</label>
-        <input type="text" class="form-control" id="Telefono" required>
+        <input type="text" class="form-control" id="Telefono" placeholder="Ingresa tu numero de teléfono a 10 digitos" required>
       </div>
       <div class="col-12">
         <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        <textarea class="form-control" id="mensaje" rows="4" placeholder="Deja tu mensaje en este cuadro" required></textarea>
       </div>
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Enviar mensaje</button>

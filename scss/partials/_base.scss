@@ -75,22 +75,15 @@ footer a {
 }
 
 .video-container {
+  width: 480px; 
+  height: 270px; 
   position: relative;
-  padding-bottom: 75%; 
-  height: 0;
-  overflow: hidden;
-  max-width: 480px;
-  width: 100%;  
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 12px;
-  }
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 }

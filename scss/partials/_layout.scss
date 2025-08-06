@@ -1,7 +1,5 @@
 @use 'mixins' as *;
 
-
-
 .card-container {
   @include flex-center;
   padding: 1rem;

@@ -1,3 +1,8 @@
+.centrado {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -172,6 +177,7 @@ footer a {
   opacity: 0;
   animation: Animacion1 2s forwards;
   animation-timing-function: ease-out;
+  text-align: center;
 }
 
 @keyframes Animacion1 {

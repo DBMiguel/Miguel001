@@ -7,7 +7,7 @@
 ├── Preguntas.html
 │
 ├── css/
-│   └── Estilos.css (compilado por parte de scss)
+│   └── Estilosstilos.css (compilado por parte de scss)
 ├── img/
 │   └── Varias Imagenes
 │
@@ -20,5 +20,5 @@
 │   ├── _animations.scss
 │   ├── _layout.scss
 │   ├── _componentes.scss
-│   └── main.scss
+│   └── main.scss (Archivo que se compila para estilos.css)
 │   └── Style.scss

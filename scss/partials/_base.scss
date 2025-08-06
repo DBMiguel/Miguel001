@@ -1,3 +1,4 @@
+@use 'variables' as *;
 
 * {
   margin: 0;
@@ -25,47 +26,41 @@ body {
   border: 0;
 }
 
-
-
-/* Anexo aqui el codigo para la separacion de las secciones de las paginas */
 header, main, footer {
   padding-top: 2rem;
   padding-bottom: 8rem;
 }
- 
+
 .impulso {
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
   font-weight: 600;
 }
- 
+
 .card-container {
   margin-bottom: 3rem;
 }
- 
+
 .card-back .imagenes-pequenas {
   gap: 1.5rem;
-} 
+}
+
 main .row > div {
   padding: 0 1rem;
 }
 
-
 .card-body {
   padding: 1.5rem;
 }
-
 
 footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-
 footer a {
   margin: 0 0.75rem;
 }
-
 
 @media (max-width: 576px) {
   main .row > div {

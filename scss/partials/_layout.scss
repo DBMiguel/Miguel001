@@ -1,3 +1,4 @@
+@use 'mixins' as *;
 
 .card-container {
   @include flex-center;
@@ -21,8 +22,6 @@
   }
 }
 
-
-
 .card-inner {
   width: 100%;
   height: auto;
@@ -30,8 +29,6 @@
   transition: transform 0.9s;
   transform-style: preserve-3d;
 }
-
-
 
 .card-front,
 .card-back {
@@ -54,7 +51,6 @@
   }
 }
 
-
 .card-back {
   transform: rotateY(180deg);
 
@@ -63,8 +59,6 @@
     text-align: center;
     margin: 0;
   }
-
-  
 
   .imagenes-pequenas {
     display: flex;
@@ -82,7 +76,7 @@
     }
   }
 }
- 
+
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }

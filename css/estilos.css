@@ -29,7 +29,6 @@ body {
   border: 0;
 }
 
-/* Anexo aqui el codigo para la separacion de las secciones de las paginas */
 header, main, footer {
   padding-top: 2rem;
   padding-bottom: 8rem;
@@ -239,4 +238,4 @@ body {
   line-height: 1.6;
 }
 
-/*# sourceMappingURL=EStilos.css.map */
+/*# sourceMappingURL=estilos.css.map */
